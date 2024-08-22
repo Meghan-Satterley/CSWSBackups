@@ -1,0 +1,368 @@
+/*  Meghan Satterley, 2023-2024, Honors Thesis Project, Break Points */
+/*  Version 5.3  */
+/*  Consolidated Social Work Services, Inc.  */ 
+
+/* RESPONSIVE TYPOGRAPHY */
+@media screen and (min-width: 1152px) {
+	:root {
+		--biggest-font-size: 4rem;
+		--bigger-font-size: 2rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: .875rem;
+		--smaller-font-size: .813rem;
+	}
+}
+
+/* SMALL */
+@media screen and (max-width: 320px) {
+    .container {
+		margin-inline: 1rem;
+	}
+}
+
+/* MEDIUM */
+@media screen and (min-width: 576px) {
+    .home_container, .about_container, .programs_container, .pro_container,
+	.mission_container, .team_container, .calendar_container, .footer_container {
+		grid-auto-columns: 360px;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.header_menu, .header_menu_programs {
+		width: 55%;
+	}
+
+	.section_title {
+		font-size: 2.75rem;
+	}
+
+    .about_container, .pro_container, .mission_container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.about_data, .mission_data, .footer_data {
+		text-align: left;
+	}
+
+	.about_card {
+		width: 400px;
+	}
+
+	.about_description {
+		margin-top: .25rem;
+		line-height: 1.5rem;
+	}
+
+	.mission_card {
+		width: 270px;
+		margin-bottom: 1rem;
+	}
+
+	.mission_subtitle {
+		visibility: visible;
+		font-size: 1.25rem;
+		font-weight: var(--font-semi-bold);
+		color: var(--main-color);
+		margin-top: .5rem;
+	}
+
+	.programs_container, .team_container, .footer_container {
+		grid-template-columns: repeat(2, 352px);
+	}
+
+	.programs_subtitle, .programs_button {
+		font-size: 1.25rem;
+	}
+	
+	.programs_title {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.pro_image {
+		width: 500px;
+	}
+
+	.pro_description {
+		line-height: 1.5rem;
+	}
+
+	.footer_title {
+		font-size: 1.75rem;
+	}
+
+	.footer_slogan {
+		margin-top: .5rem;
+		font-size: 1.5rem;
+	}
+
+	.footer_info {
+		font-size: 1rem;
+	}
+
+	.footer_copy {
+		font-size: .75rem;
+	}
+}
+
+/* LARGE */
+@media screen and (min-width: 1023px) {
+	.section {
+		padding-block: 7rem 2rem;
+	}
+
+    .header_container {
+		height: calc(var(--header-height) + 1.5rem);
+	}
+
+    .header_close, .header_toggle {
+		display: none;
+	}
+
+	.header_list {
+		flex-direction: row;
+		column-gap: 1.5rem;
+	}
+
+	.header_menu {
+		width: initial;
+	}
+
+	.header_menu_programs {
+		width: 35%;
+	}
+
+	.header_link {
+		font-size: .90rem;
+	}
+
+	.blur-header::after {
+		backdrop-filter: blur(25px);
+		-webkit-backdrop-filter: blur(25px); /* safari */
+	}
+
+	.home_title {
+		font-size: 2.75rem;
+	}
+
+	.home_subtitle {
+		font-size: 2rem;
+	}
+
+	.about_card {
+		width: 500px;
+	}
+
+	.about_slogan {
+		font-size: 2rem;
+	}
+
+	.about_subtitle {
+		font-size: 2.75rem;
+	}
+
+	.about_description {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+
+	.about_button {
+		font-size: 1rem;
+		margin-top: .25rem;
+	}
+
+	.mission_card {
+		width: 500px;
+	}
+
+	.mission_subtitle {
+		font-size: 2rem;
+	}
+
+	.mission_description {
+		font-size: 1.15rem;
+	}
+
+	.pro_title {
+		font-size: 2rem;
+	}
+
+	.pro_data {
+		margin: .75rem;
+	}
+
+	.pro_description {
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+	}
+
+	.footer_container {
+		grid-template-columns: repeat(2, 452px);
+	}
+
+	.footer_title {
+		font-size: 1.40rem;
+	}
+
+	.footer_slogan {
+		margin-top: .25rem;
+		font-size: 1.75rem;
+		font-weight: 600;
+	}
+
+	.footer_copy {
+		margin-top: 1rem;
+		font-size: 1rem;
+	}
+
+	.show_two {
+		visibility: hidden;
+	}
+	
+	.show_one {
+		visibility: visible;
+	}
+
+	.top {
+		margin-top: 3.25rem;
+	}
+}
+
+@media screen and (min-width: 1152px) {
+    .container {
+		margin-inline: auto;
+	}
+
+	.header_logo, .header_link {
+		font-size: 1.1rem;
+	}
+
+    .home_container {
+		padding-block: 2rem 3rem;
+	}
+
+	.home_title {
+		padding: 1rem 1rem;
+		font-size: 3.25rem;
+		margin-top: 40rem;
+	}
+
+	.home_subtitle {
+		font-size: 2.5rem;
+	}
+
+	.section_title {
+		font-size: 3rem;
+	}
+
+	.about_container, .mission_container, .pro_container {
+		grid-template-columns: 550px 460px;
+		column-gap: 4.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.about_card {
+		width: 550px;
+		padding-top: 3rem;
+	}
+
+	.about_slogan {
+		font-size: var(--bigger-font-size);
+		top: -120px;
+	}
+
+	.about_subtitle {
+		font-size: 3.75rem;
+		font-weight: var(--font-semi-bold);
+		margin-top: 2rem;
+	}
+
+	.about_description, .mission_description, .pro_container {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		margin-top: .25rem;
+	}
+
+	.about_button {
+		font-size: var(--h3-font-size);
+	}
+
+	.mission_card {
+		width: 550px;
+		height: 250px;
+	}
+
+	.mission_icon {
+		font-size: 4rem;
+	}
+
+	.mission_title {
+		font-size: 2rem;
+	}
+
+	.mission_description {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+
+	.team_container {
+		grid-template-columns: repeat(3,350px);
+		row-gap: 3rem;
+		padding-block: 2.5rem 4rem;
+	}
+
+	.programs_container {
+		grid-template-columns: repeat(3,350px);
+		row-gap: 3rem;
+		padding-block: 2.5rem 1rem;
+	}
+
+	.programs_title {
+		font-size: 2.25rem;
+	}
+
+	.programs_button {
+		font-size: var(--normal-font-size);
+	}
+
+	.pro_image {
+		width: 650px;
+	}
+
+	.pro_content {
+		row-gap: 4.5rem;
+	}
+
+	.pro_description {
+		font-size: 1.5rem;
+		line-height: 3rem;
+	}
+
+	.footer_container {
+		column-gap: 8rem;
+	}
+
+	.footer_button {
+		font-size: 1.25rem;
+	}
+
+	.footer_contact {
+		font-size: 1.5rem;
+	}
+	
+	.footer_info {
+		margin-top: .25rem;
+		font-size: 1.25rem;
+		line-height: 2rem;
+	}
+
+	.scrollup {
+		right: 3rem;
+	}
+
+}
